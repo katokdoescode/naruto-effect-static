@@ -6,6 +6,7 @@
 	/* LEFT SECTION */
 	--max-left-section-width: 279px;
 	--min-left-section-width: 215px;
+	--left-section-span-height: 56px;
 
 	/* CENTER SECTION */
 	--max-center-section-width: 562px;
@@ -13,7 +14,7 @@
 
 	/* RIGHT SECTION */
 	--max-right-section-width: 225px;
-	--min-right-section-width: 115px;
+	--min-right-section-width: 154px;
 
 	/* MAIN PAGE SIZES */
 	--initial-padding-top: 60px;
@@ -60,7 +61,7 @@
 }
 
 /* RESIZE FONT */
-@media (width <= 902px) {
+@media (width <= 1018px) {
 	:root {
 		/* MAIN TEXT */
 		/* --font-main-size: 12px; */

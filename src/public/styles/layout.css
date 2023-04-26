@@ -12,12 +12,12 @@ body {
 .main-section {
 	container: main / inline-size;
 	display: flex;
-	height: calc(100vh - var(--initial-padding-top));
+	height: calc(100svh - var(--initial-padding-top));
 	justify-content: space-between;
 	box-sizing: border-box;
 }
 
-@media (width <= 902px) {
+@media (width <= 1018px) {
 	.main-section {
 		height: auto;
 		flex-direction: column;
@@ -31,7 +31,7 @@ body {
 	padding: 0 var(--sections-padding);
 }
 
-@media (width <= 902px) {
+@media (width <= 1018px) {
 	.main-section .main-section__item {
 		flex: 1 0 auto;
 		width: 100%;

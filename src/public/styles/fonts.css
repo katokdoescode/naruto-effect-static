@@ -44,7 +44,7 @@ a:not([href^="/"]):hover::after {
 	position: absolute;
 }
 
-@media (width <= 902px) {
+@media (width <= 1018px) {
 	a:not([href^="/"]):hover::after {
 		transform: translate(.1rem, -.3rem) rotate(90deg);
 	}

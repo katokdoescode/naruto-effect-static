@@ -3,10 +3,9 @@
 	grid-template-rows: max-content minmax(0px, 1fr) max-content;
 	padding-top: 10px;
 	padding-bottom: 38px;
-	box-sizing: border-box;
 }
 
-@media (width <= 902px) {
+@media (width <= 1018px) {
 	#right {
 		padding-bottom: 66px;
 	}
@@ -17,7 +16,7 @@
 	text-decoration: none;
 }
 
-@media (width <=902px) {
+@media (width <=1018px) {
 	.service-link {
 		display: none;
 	}
@@ -27,10 +26,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	padding-top: clamp(60px, 12vh, 140px);
+	padding-top: clamp(60px, 12svh, 140px);
 }
 
-@media (width <=902px) {
+@media (width <=1018px) {
 	.right-nav {
 		padding-top: 40px;
 	}
