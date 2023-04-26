@@ -48,7 +48,6 @@
 @media (width <=1018px) {
 	#left:has(.menu-btn__btn:not(:checked)) .left-nav__footer,
 	#left:has(.menu-btn__btn:not(:checked)) .left-nav {
-		transform: translateX(-100vw);
 		visibility: hidden;
 	}
 }
@@ -58,8 +57,6 @@
 	display: grid;
 	grid-template-rows: max-content minmax(0, 1fr);
 	gap: 10px;
-	transform: translateX(0);
-	transition: transform .3s ease-in-out;
 }
 
 .left-nav__title {
@@ -103,8 +100,6 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	transform: translateX(0);
-	transition: transform .3s ease-in-out;
 }
 
 @media (width <=1018px) {
