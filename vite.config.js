@@ -10,7 +10,7 @@ export default defineConfig({
 	root: './src/',
 	plugins: [
 		handlebars({
-			partialDirectory: resolve(import.meta.url, 'src/modules')
+			partialDirectory: resolve(__dirname, 'src/modules')
 		})
 	],
 	css: {
