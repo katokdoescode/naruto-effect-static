@@ -8,6 +8,9 @@ import postcssCsso from 'postcss-csso';
 export default defineConfig({
 	base: './',
 	root: './src/',
+	build: {
+		outDir: resolve(__dirname, 'dist/')
+	},
 	plugins: [
 		handlebars({
 			partialDirectory: resolve(__dirname, 'src/modules')
