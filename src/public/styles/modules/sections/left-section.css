@@ -1,7 +1,8 @@
 #left {
 	display: grid;
 	grid-template-rows: max-content minmax(0, 1fr) max-content;
-	max-height: calc(100svh - 50px);
+	padding-top: var(--initial-padding-top);
+	max-height: calc(100svh - var(--initial-padding-top));
 	transition: max-height .3s ease-in-out;
 }
 
