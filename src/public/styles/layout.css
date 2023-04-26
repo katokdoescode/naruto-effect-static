@@ -12,7 +12,7 @@ body {
 .main-section {
 	container: main / inline-size;
 	display: flex;
-	height: calc(100svh - var(--initial-padding-top));
+	height: 100svh;
 	justify-content: space-between;
 	box-sizing: border-box;
 }

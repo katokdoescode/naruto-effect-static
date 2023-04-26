@@ -1,7 +1,7 @@
 #right {
 	display: grid;
 	grid-template-rows: max-content minmax(0px, 1fr) max-content;
-	padding-top: 10px;
+	padding-top: calc(var(--initial-padding-top) + 10px);
 	padding-bottom: 38px;
 }
 
