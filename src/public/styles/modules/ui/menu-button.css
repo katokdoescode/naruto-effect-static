@@ -1,0 +1,28 @@
+.menu-btn::before {
+	content: '';
+	display: flex;
+	place-content: center;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: 18px;
+	width: 27px;
+	line-height: 18px;
+	background-color: transparent;
+	background-image: var(--icon-burger-menu);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.menu-btn:has(.menu-btn__btn:focus-visible)::before {
+	outline: 2px solid dodgerblue;
+	outline-offset: 2px;
+}
+
+.menu-btn:has(.menu-btn__btn:checked)::before,
+.menu-btn__btn_close {
+	background-image: var(--icon-burger-close);
+}

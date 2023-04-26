@@ -1,0 +1,100 @@
+body {
+	font-family: var(--font-main-family);
+	font-size: var(--font-main-size);
+	font-weight: var(--font-main-weight);
+	color: var(--text-color);
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+	font-weight: var(--font-heading-weight);
+	margin: 0 0 5px 0;
+	padding: 10px 0 0;
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: var(--font-main-size);
+}
+
+h1 {
+	font-size: var(--font-heading-size);
+}
+
+h1 + h2,
+h2 + h3 {
+	margin: -5px 0 0 0;
+	padding: 0;
+	font-size: var(--font-heading-size);
+	font-weight: var(--font-main-weight);
+}
+
+/* LINKS */
+a {
+	color: var(--text-color);
+	font-weight: var(--font-bold-weight);
+}
+
+/* EXTERNAL LINK */
+a:not([href^="/"]):hover::after {
+	content: '' var(--external-link-icon);
+	width: 10px;
+	height: 10px;
+	transform: translate(.35rem, -.2rem) rotate(90deg);
+	position: absolute;
+}
+
+@media (width <= 902px) {
+	a:not([href^="/"]):hover::after {
+		transform: translate(.1rem, -.3rem) rotate(90deg);
+	}
+}
+
+nav a, .menu a {
+	text-underline-offset: 4px;
+}
+
+/* LISTS */
+ol, ul {
+	margin: 10px 0;
+	padding-left: 1.6em;
+}
+
+li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+/* OTHER */
+blockquote {
+	margin: 10px 26px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+/* NAVIGATION MENUES */
+nav {
+	font-family: var(--font-main-family);
+}
+
+nav ul, nav ol,
+nav li, .menu li,
+.menu ul, .menu ol {
+	font-size: var(--font-main-menu-size);
+	font-weight: var(--font-bold-weight);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	margin-bottom: 18px;
+}
+
+nav a,
+.menu a {
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+}
