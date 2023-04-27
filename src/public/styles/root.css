@@ -19,7 +19,7 @@
 	/* MAIN PAGE SIZES */
 	--initial-padding-top: 60px;
 	--initial-padding-on-the-sides: 70px;
-	--body-padding: var(--initial-padding-top) var(--initial-padding-on-the-sides) 0;
+	--body-padding: 0 var(--initial-padding-on-the-sides) 0;
 
 	--max-content-width: 1250px;
 	--min-content-width: calc(
@@ -68,19 +68,6 @@
 /* RESIZE FONT */
 @media (width <= 1018px) {
 	:root {
-		/* MAIN TEXT */
-		/* --font-main-size: 12px; */
-
-		/* HEADINGS */
-		/* --font-heading-size: 20px; */
-
-		/* MENUES */
-		/* --font-main-menu-size: 18px; */
-		/* --font-main-menu-heading-size: 18px; */
-
-		/* --font-second-menu-size: 14px;
-		--font-second-menu-heading-size: 14px; */
-
 		--initial-padding-top: 50px;
 	}
 }
