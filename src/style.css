@@ -3,3 +3,6 @@
 @import './public/styles/layout.css';
 @import './public/styles/modules.css';
 @import './public/styles/important.css';
+
+
+@import './public/styles/modules/menu/menu.css';
