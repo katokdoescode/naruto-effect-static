@@ -42,7 +42,7 @@ body {
 
 @media (width <= 1018px) {
 	#openButton {
-		top: 90vh;
+		top: 80vh;
 		right: 0;
 	}
 }
