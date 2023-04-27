@@ -3,13 +3,14 @@ import { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
 import autoprefixer from 'autoprefixer';
 import postcssMediaMinmax from 'postcss-media-minmax';
-import postcssCsso from 'postcss-csso';
+import cssHasPseudo from 'css-has-pseudo';
 
 export default defineConfig({
 	base: './',
 	root: './src/',
 	build: {
-		outDir: resolve(__dirname, 'dist/')
+		outDir: resolve(__dirname, 'dist/'),
+		emptyOutDir: true,
 	},
 	plugins: [
 		handlebars({
@@ -19,9 +20,9 @@ export default defineConfig({
 	css: {
 		postcss: {
 			plugins: [
-				autoprefixer(),
-				postcssMediaMinmax(),
-				postcssCsso(),
+				autoprefixer,
+				postcssMediaMinmax,
+				cssHasPseudo,
 			]
 		}
 	},
