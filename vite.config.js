@@ -16,6 +16,7 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         practice: resolve(__dirname, 'src/practice.html'),
         participant: resolve(__dirname, 'src/participant.html'),
+        document: resolve(__dirname, 'src/document.html'),
       },
     },
 	},
