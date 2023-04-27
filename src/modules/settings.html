@@ -1,0 +1,31 @@
+<dialog id="settingsMenu">
+	<section>
+		<h2>Настройки</h2>
+		<fieldset>
+			<legend>
+				Отступ сверху
+				<span>
+					: <span id="paddingTopValue">60</span>px
+				</span>
+			</legend>
+			<label for="paddingTop">
+				<span>0</span>
+				<input
+					type="range"
+					name="paddingTop"
+					id="paddingTop"
+					min="0"
+					max="100"
+					step="1"
+					value="60"
+				>
+				<span>50</span>
+			</label>
+		</fieldset>
+	</section>
+	<form method="dialog">
+		<button id="closeButton" type="submit" title="Закрыть настройки">➲</button>
+	</form>
+</dialog>
+
+<button id="openButton" type="button" title="Открыть настройки">➲</button>
