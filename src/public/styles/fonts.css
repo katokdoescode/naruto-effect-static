@@ -24,7 +24,7 @@ h1 {
 h1 + h2,
 h2 + h3 {
 	margin: -5px 0 0 0;
-	padding: 0;
+	padding: 0 0 10px 0;
 	font-size: var(--font-heading-size);
 	font-weight: var(--font-main-weight);
 }
@@ -33,6 +33,7 @@ h2 + h3 {
 a {
 	color: var(--text-color);
 	font-weight: var(--font-bold-weight);
+	position: relative;
 }
 
 /* EXTERNAL LINK */
@@ -97,4 +98,13 @@ nav a,
 	font-size: inherit;
 	font-weight: inherit;
 	text-decoration: none;
+}
+
+.link-active {
+	text-decoration: underline;
+}
+
+.no-markers {
+	list-style: none;
+	padding-left: 0;
 }
