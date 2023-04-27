@@ -17,7 +17,7 @@
 	--min-right-section-width: 154px;
 
 	/* MAIN PAGE SIZES */
-	--initial-padding-top: 60px;
+	--initial-padding-top: 35px;
 	--initial-padding-on-the-sides: 70px;
 	--body-padding: 0 var(--initial-padding-on-the-sides) 0;
 
@@ -68,7 +68,7 @@
 /* RESIZE FONT */
 @media (width <= 1018px) {
 	:root {
-		--initial-padding-top: 50px;
+		--initial-padding-top: 25px;
 	}
 }
 
