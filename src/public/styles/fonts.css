@@ -38,9 +38,9 @@ a {
 /* EXTERNAL LINK */
 a:not([href^="/"]):hover::after {
 	content: '' var(--external-link-icon);
-	width: 10px;
-	height: 10px;
-	transform: translate(.35rem, -.2rem) rotate(90deg);
+	width: 15px;
+	height: 15px;
+	transform: translate(0, -10px) rotate(90deg);
 	position: absolute;
 }
 
