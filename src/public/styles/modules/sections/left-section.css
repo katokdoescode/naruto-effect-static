@@ -1,9 +1,12 @@
 #left {
+	--apeear-delay: .13s;
+	--appear-timing: .3s;
+	--appear-transition: opacity var(--appear-timing) ease-in-out var(--apeear-delay);
+
 	display: grid;
 	grid-template-rows: max-content minmax(0, 1fr) max-content;
 	padding-top: var(--initial-padding-top);
 	max-height: calc(100svh - var(--initial-padding-top));
-	transition: max-height .3s ease-in-out;
 }
 
 @media (width <=1018px) {
@@ -11,6 +14,7 @@
 		background-color: white;
 		width: 100%;
 		position: fixed;
+		transition: max-height var(--appear-timing) ease-in-out;
 	}
 
 	#left:has(.menu-btn__btn:not(:checked)) {
@@ -46,18 +50,17 @@
 	}
 }
 
-@media (width <=1018px) {
-	#left:has(.menu-btn__btn:not(:checked)) .left-nav__footer,
-	#left:has(.menu-btn__btn:not(:checked)) .left-nav {
-		visibility: hidden;
-	}
-}
-
 .left-nav {
 	padding-top: 70px;
 	display: grid;
 	grid-template-rows: max-content minmax(0, 1fr);
 	gap: 10px;
+}
+
+@media (width <=1018px) {
+	.left-nav {
+		transition: var(--appear-transition);
+	}
 }
 
 .left-nav__title {
@@ -105,8 +108,22 @@
 
 @media (width <=1018px) {
 	.left-nav__footer {
+		transition: var(--appear-transition);
 		height: 90px;
 		bottom: 0;
+	}
+}
+
+@media (width <= 1018px) {
+	#left:has(.menu-btn__btn:not(:checked)) .left-nav__footer,
+	#left:has(.menu-btn__btn:not(:checked)) .left-nav {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	#left:has(.menu-btn__btn:checked) .left-nav__footer,
+	#left:has(.menu-btn__btn:checked) .left-nav {
+		opacity: 1;
 	}
 }
 
