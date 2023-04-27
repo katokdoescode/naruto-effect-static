@@ -33,6 +33,7 @@ body {
 	opacity: .2;
 	position: fixed;
 	right: -30px;
+	right: -25px;
 	bottom: 30px;
 	position: absolute;
 	transform: rotate(180deg);
