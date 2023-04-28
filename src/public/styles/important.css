@@ -8,3 +8,10 @@
 	width: 1px !important;
 	overflow: hidden;
 }
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		transition: none !important;
+		animation: none !important;
+	}
+}
