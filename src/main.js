@@ -17,4 +17,14 @@ if (!CSS.supports('body:has(*)')) {
 			btnWrapper.classList.remove('menu-btn_has-checked');
 		}
 	});
+
+	menuBtn.addEventListener('focusin', () => {
+		const btnWrapper = menuBtn.parentNode;
+		btnWrapper.classList.add('menu-btn_has-focus-visible');
+	});
+
+	menuBtn.addEventListener('focusout', () => {
+		const btnWrapper = menuBtn.parentNode;
+		btnWrapper.classList.remove('menu-btn_has-focus-visible');
+	});
 };
