@@ -22,7 +22,13 @@
 	outline-offset: 2px;
 }
 
+.menu-btn_has-focus-visible::before {
+	outline: 2px solid dodgerblue;
+	outline-offset: 2px;
+}
+
 .menu-btn:has(.menu-btn__btn:checked)::before,
+.menu-btn_has-checked::before,
 .menu-btn__btn_close {
 	background-image: var(--icon-burger-close);
 }
