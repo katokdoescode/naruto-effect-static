@@ -13,8 +13,10 @@ if (!CSS.supports('body:has(*)')) {
 
 		if(isChecked) {
 			btnWrapper.classList.add('menu-btn_has-checked');
+			btnWrapper.setAttribute('aria-expanded', isChecked)
 		} else {
 			btnWrapper.classList.remove('menu-btn_has-checked');
+			btnWrapper.setAttribute('aria-expanded', isChecked)
 		}
 	});
 
