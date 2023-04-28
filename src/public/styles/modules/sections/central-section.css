@@ -9,6 +9,10 @@
 	}
 }
 
+.main-page-content::-webkit-scrollbar {
+	display: none;
+}
+
 .main-page-content {
 	overflow: hidden auto;
 	padding-top: calc(var(--initial-padding-top) + 40px);

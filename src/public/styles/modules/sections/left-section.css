@@ -80,6 +80,11 @@
 	font-weight: var(--font-main-weight);
 }
 
+
+.left-nav__links-list::-webkit-scrollbar {
+	display: none;
+}
+
 .left-nav__links-list {
 	display: flex;
 	flex-direction: column;
