@@ -20,7 +20,8 @@ if (!CSS.supports('body:has(*)')) {
 
 	menuBtn.addEventListener('focusin', () => {
 		const btnWrapper = menuBtn.parentNode;
-		btnWrapper.classList.add('menu-btn_has-focus-visible');
+		if(menuBtn.matches(':focus-visible'))
+			btnWrapper.classList.add('menu-btn_has-focus-visible');
 	});
 
 	menuBtn.addEventListener('focusout', () => {
