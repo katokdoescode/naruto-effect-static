@@ -17,11 +17,19 @@
 		transition: max-height var(--appear-timing) ease-in-out;
 	}
 
-	.left_has-not-checked,
+	#left[menu-is-open="false"],
 	#left:has(.menu-btn__btn:not(:checked)) {
 		position: fixed;
 		max-height: var(--left-section-span-height);
 		overflow: hidden;
+	}
+
+	@supports not selector(:has(*)) {
+		#left:not([menu-is-open]) {
+			position: fixed;
+			max-height: var(--left-section-span-height);
+			overflow: hidden;
+		}
 	}
 }
 
@@ -116,16 +124,16 @@
 }
 
 @media (width <= 1018px) {
-	.left_has-not-checked .left-nav,
-	.left_has-not-checked .left-nav__footer,
+	#left[menu-is-open="false"] .left-nav,
+	#left[menu-is-open="false"] .left-nav__footer,
 	#left:has(.menu-btn__btn:not(:checked)) .left-nav__footer,
 	#left:has(.menu-btn__btn:not(:checked)) .left-nav {
 		visibility: hidden;
 		opacity: 0;
 	}
 
-	.left_has-checked .left-nav,
-	.left_has-checked .left-nav__footer,
+	#left[menu-is-open="true"] .left-nav,
+	#left[menu-is-open="true"] .left-nav__footer,
 	#left:has(.menu-btn__btn:checked) .left-nav__footer,
 	#left:has(.menu-btn__btn:checked) .left-nav {
 		opacity: 1;
