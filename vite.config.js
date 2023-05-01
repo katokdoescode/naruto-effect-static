@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
 import autoprefixer from 'autoprefixer';
 import postcssMediaMinmax from 'postcss-media-minmax';
-import cssHasPseudo from 'css-has-pseudo';
+import postcssHasPseudo from 'css-has-pseudo';
 
 export default defineConfig({
 	base: '/naruto-effect-frontend/',
@@ -30,7 +30,7 @@ export default defineConfig({
 			plugins: [
 				autoprefixer,
 				postcssMediaMinmax,
-				cssHasPseudo,
+				postcssHasPseudo,
 			]
 		}
 	},
