@@ -20,6 +20,8 @@ concurrency:
 
 jobs:
   deploy:
+    env:
+      VITE_BASE: ${{ steps.deployment.outputs.page_url }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
