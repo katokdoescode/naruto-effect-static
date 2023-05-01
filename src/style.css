@@ -1,5 +1,5 @@
-@import './public/styles/root.css';
-@import './public/styles/fonts.css';
-@import './public/styles/layout.css';
-@import './public/styles/modules.css';
-@import './public/styles/important.css';
+@import './assets/styles/root.css';
+@import './assets/styles/fonts.css';
+@import './assets/styles/layout.css';
+@import './assets/styles/modules.css';
+@import './assets/styles/important.css';
