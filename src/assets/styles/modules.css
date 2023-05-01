@@ -20,6 +20,7 @@
 	height: 114px;
 }
 .shadow-wrapper::before {
+	z-index: 1;
 	height: 38px;
 	top: -10px;
 	background: linear-gradient(
