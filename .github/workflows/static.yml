@@ -25,7 +25,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
-      VITE_BASE: ${{ steps.deployment.outputs.page_url }}
+      VITE_BASE: ${{ env.VITE_BASE }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
