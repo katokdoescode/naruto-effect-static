@@ -1,9 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
 import { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
-import autoprefixer from 'autoprefixer';
-import postcssMediaMinmax from 'postcss-media-minmax';
-import postcssHasPseudo from 'css-has-pseudo';
+import postcss from './postcss.config.js';
 
 export default defineConfig(({ command, mode }) => {
 	const env = loadEnv(mode, process.cwd());
@@ -14,6 +12,7 @@ export default defineConfig(({ command, mode }) => {
 		build: {
 			outDir: resolve(__dirname, 'dist/'),
 			emptyOutDir: true,
+			minify: false,
 			rollupOptions: {
 				input: {
 					main: resolve(__dirname, 'src/index.html'),
@@ -29,13 +28,7 @@ export default defineConfig(({ command, mode }) => {
 			})
 		],
 		css: {
-			postcss: {
-				plugins: [
-					autoprefixer,
-					postcssMediaMinmax,
-					postcssHasPseudo,
-				]
-			}
+			postcss,
 		},
 	}
 });

@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.1-templates",
   "type": "module",
+  "browserslist": [
+    "> 2%",
+    "not dead"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
